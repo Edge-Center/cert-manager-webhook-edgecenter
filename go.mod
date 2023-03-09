@@ -1,4 +1,4 @@
-module github.com/cert-manager/webhook-example
+module github.com/Edge-Center/cert-manager-webhook-edgecenter
 
 go 1.19
 
@@ -15,6 +15,12 @@ require (
 )
 
 require (
+	github.com/Edge-Center/edgecenter-dns-sdk-go v0.1.0
+	k8s.io/apimachinery v0.26.0
+)
+
+require (
+	github.com/Edge-Center/edgecenter-dns-sdk-go v0.1.0 // indirect
 	github.com/NYTimes/gziphandler v1.1.1 // indirect
 	github.com/antlr/antlr4/runtime/Go/antlr v1.4.10 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect

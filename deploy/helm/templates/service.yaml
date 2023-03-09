@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "edgecenter-webhook.fullname" . }}
+  labels:
+{{ include "edgecenter-webhook.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: https
+      protocol: TCP
+      name: https
+  selector:
+    app.kubernetes.io/name: {{ include "edgecenter-webhook.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}

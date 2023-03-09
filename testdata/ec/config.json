@@ -1,0 +1,7 @@
+{
+    "apiKeySecretRef": {
+        "name": "ec-api-token",
+        "key": "token"
+    },
+    "ttl": 60
+}
