@@ -259,8 +259,8 @@ spec:
         - --tls-private-key-file=/tls/tls.key
         env:
         - name: GROUP_NAME
-          value: acme.edgecenter.com
-        image: ghcr.io/Edge-Center/cert-manager-webhook-edgecenter:latest
+          value: acme.edgecenter.ru
+        image: ghcr.io/edge-center/cert-manager-webhook-edgecenter:latest
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3

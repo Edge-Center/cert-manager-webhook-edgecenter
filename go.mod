@@ -1,4 +1,4 @@
-module github.com/Edge-Center/cert-manager-webhook-edgecenter
+module github.com/edge-center/cert-manager-webhook-edgecenter
 
 go 1.19
 

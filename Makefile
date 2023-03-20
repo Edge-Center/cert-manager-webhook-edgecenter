@@ -2,7 +2,7 @@ GO ?= $(shell which go)
 OS ?= $(shell $(GO) env GOOS)
 ARCH ?= $(shell $(GO) env GOARCH)
 
-IMAGE_NAME := "ghcr.io/Edge-Center/cert-manager-webhook-edgecenter"
+IMAGE_NAME := "ghcr.io/edge-center/cert-manager-webhook-edgecenter"
 IMAGE_TAG := "latest"
 
 OUT := $(shell pwd)/_out
