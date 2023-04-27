@@ -32,7 +32,7 @@ func main() {
 		panic(fmt.Sprintf("%s must be specified", groupNameEnvVar))
 	}
 
-	// This will register our custom DNS provider with the webhook serving
+	// This will register our EdgeCenter DNS provider with the webhook serving
 	// library, making it available as an API under the provided GroupName.
 	// You can register multiple DNS provider implementations with a single
 	// webhook, where the Name() method will be used to disambiguate between

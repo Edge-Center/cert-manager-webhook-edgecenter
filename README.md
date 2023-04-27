@@ -18,7 +18,7 @@ Table of Contents
 ### Cert Manager
 
 Follow the [instructions](https://cert-manager.io/docs/installation/) using the cert manager documentation to install it within your cluster.
-On kubernetes (>= 1.21), the process is pretty straightforward if you use the following commands:
+On kubernetes (>= 1.24), the process is pretty straightforward if you use the following commands:
 ```bash
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.11.1/cert-manager.yaml
 ```
@@ -27,7 +27,7 @@ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.1
 
 - Install next the helm chart if [helm v3 is deployed](https://helm.sh/docs/intro/install/) on your machine
 ```bash
-git clone https://github.com/Edge-Center/cert-manager-webhook-edgecenter.git
+git clone https://github.com/edge-center/cert-manager-webhook-edgecenter.git
 cd cert-manager-webhook-edgecenter
 helm install -n cert-manager edgecenter-webhook --set groupName='<YOUR_GROUP_NAME>' ./deploy/helm
 ```
@@ -111,7 +111,7 @@ spec:
             production: true
             ttl: 600
           groupName: <YOUR_GROUP_NAME> # Use the groupName defined above
-          solverName: ec
+          solverName: edgecenter
 EOF
 ```
 - Next, install it on your kubernetes cluster
