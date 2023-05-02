@@ -58,7 +58,7 @@ and the DNS provider to be used
 
 ### Secret
 
-- Create your Permanent API token by guide https://edgecenter.ru/blog/permanent-api-token-explained/
+- Create your Permanent API token by guide https://support.edgecenter.ru/knowledge_base/item/257788?sid=57461
 - Create a `Secret` containing as key parameter the concatenation of the EdgeCenter Api and Secret separated by ":"
 ```yaml
 cat <<EOF > secret.yml
